@@ -111,7 +111,7 @@ def campus():
 
 def fish():
     while True:
-        critical_click_button('0c.png')
+        critical_click_button(r'.\lib\0c.png')
         time.sleep(1)
 
 def main():
