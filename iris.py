@@ -1,4 +1,4 @@
-import time
+ import time
 
 import pyautogui
 def click_button(button,offset = (0,0),refresh = False):
@@ -50,7 +50,7 @@ def quest(small = False,abyss = False,refresh = False):
     if small:
         while True:
             print(1)
-            if abyss and not click_button('11a.png',refresh = refresh):
+            if abyss and not click_button(r'.\lib\11a.png',refresh = refresh):
                 click_button(r'.\lib\1a.png',refresh = refresh)
             if not abyss:
                 click_button(r'.\lib\1a.png',refresh = refresh)
@@ -116,9 +116,9 @@ def fish():
 
 def main():
     # visit()
-    # quest(small=True,abyss = True,refresh = True)
+    quest(small=True,abyss = True,refresh = True)
     # campus()
-    fish()
+    # fish()
     #
 
 if __name__ == '__main__':
